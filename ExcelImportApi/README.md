@@ -18,11 +18,10 @@ The goal is to give users a clean experience when importing structured data into
 
 ### Template endpoint
 
-```
 
-GET /api/countries/template
 
-```
+##### GET /api/countries/template
+
 
 What this returns:
 
@@ -43,12 +42,11 @@ Users fill this file and re-upload it.
 
 ### Upload endpoint
 
-```
 
-POST /api/countries/upload
+
+##### POST /api/countries/upload
 Form field: file (multipart/form-data)
 
-```
 
 What happens internally:
 
@@ -82,11 +80,10 @@ You use this `id` to download the error-annotated Excel later.
 
 ### Error report endpoint
 
-```
 
-GET /api/countries/import/{id}
 
-````
+#### GET /api/countries/import/{id}
+
 
 What this does:
 
@@ -115,7 +112,7 @@ query {
     contentBase64
   }
 }
-````
+
 
 ### Upload Excel file
 
@@ -137,7 +134,7 @@ mutation ($file: Upload!) {
     }
   }
 }
-```
+
 
 ### Get job details
 
@@ -157,9 +154,7 @@ query ($id: String!) {
     }
   }
 }
-```
 
----
 
 ## Internal Processing (Short Explanation)
 
